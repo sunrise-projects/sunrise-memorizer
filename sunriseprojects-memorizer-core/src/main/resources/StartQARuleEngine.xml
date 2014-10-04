@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "http://www.springframework.org/dtd/spring-beans.dtd">
+
+
+<beans>
+
+	<!-- rule engine processor -->
+	<bean id="StartQAProcessor" class="com.sunriseprojects.memorizer.core.framework.SpringRuleEngine">
+		<property name="firstStep">
+			<ref bean="StartQARule"/>
+		</property>
+	</bean>
+	
+	<!-- persistence service -->
+	<bean id="QAPersistenceService" class="com.sunriseprojects.memorizer.core.services.SerializedQAPersistence"/>
+	
+	<!-- rejection -->
+	<bean id="StartQANegativeAction" class="com.sunriseprojects.memorizer.core.actions.StartQANegativeAction">
+		<property name="persistenceService">
+			<ref bean="QAPersistenceService"/>
+		</property>
+	</bean>
+	
+	<!-- approval -->
+	<bean id="StartQAPositiveAction" class="com.sunriseprojects.memorizer.core.actions.StartQAPositiveAction">
+		<property name="persistenceService">
+			<ref bean="QAPersistenceService"/>
+		</property>
+	</bean>
+	
+	<!-- validation -->
+	<bean id="StartQARule" class="com.sunriseprojects.memorizer.core.rules.StartQARule">
+		<property name="positiveOutcomeStep">
+			<ref bean="StartQAPositiveAction"/>
+		</property>
+		<property name="negativeOutcomeStep">
+			<ref bean="StartQANegativeAction"></ref>
+		</property>		
+	</bean>
+
+</beans>
