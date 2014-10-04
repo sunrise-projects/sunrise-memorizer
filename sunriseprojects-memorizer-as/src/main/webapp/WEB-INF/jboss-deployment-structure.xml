@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure> 
+  <deployment> 
+	<exclusions>
+		<module name="org.apache.log4j" />
+		<module name="org.slf4j" />
+		<module name="org.slf4j.impl" />
+		<module name="org.slf4j.jcl-over-slf4j" />
+		<module name="org.slf4j.ext" />
+	</exclusions>  
+    <dependencies> 
+    	<module name="com.sunriseprojects.memorizer.configuration" slot="main" />
+		<module name="javax.jms.api" />
+		<module name="javax.xml.bind.api" />
+		<module name="org.jboss.jts.integration"/>
+		<module name="org.jboss.jboss-transaction-spi"/>
+		<module name="org.jboss.as.jmx"/>
+		<module name="org.jboss.as.server"/>    	
+    </dependencies>
+  </deployment> 
+</jboss-deployment-structure>
