@@ -50,6 +50,11 @@
 			value="Upload">
 	</form>
 </div>  
-	
+<br/><br/>
+Templates: 
+<br/>
+<a href="memorize-this.xlsx">memorize-this.xlsx</a>	
+<br/>
+<a href="sample.xlsx">sample.xlsx</a>	
 </body>
 </html>

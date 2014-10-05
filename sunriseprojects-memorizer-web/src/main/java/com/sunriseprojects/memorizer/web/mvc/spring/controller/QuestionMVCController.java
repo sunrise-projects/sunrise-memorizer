@@ -32,7 +32,7 @@ public class QuestionMVCController {
 	private String excelLocation;
 	
 	@RequestMapping(value = QuestionMvcURIConstants.QUESTION_UPLOAD, method = RequestMethod.POST)
-	public String questionUploadFile(ModelMap model, @RequestParam("name") String name, 
+	public String questionUploadFile(ModelMap model, @PathVariable("name") String name, 
 			@RequestParam("file") MultipartFile file) {		
         String fname = name+"-uploaded"+UUID.randomUUID().toString();
         System.out.println(fname);
