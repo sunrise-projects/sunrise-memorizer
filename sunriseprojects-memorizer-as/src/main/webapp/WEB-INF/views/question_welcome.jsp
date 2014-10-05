@@ -41,6 +41,15 @@
 
     </form>
 </div>    
+<br/><br/>
+<div id="inline_content">
+	<form method="POST" enctype="multipart/form-data"
+		action="${questionMvcUrl}/upload">
+		File to upload: <input type="file" name="file"><br /> Name: <input
+			type="text" name="name"><br /> <br /> <input type="submit"
+			value="Upload">
+	</form>
+</div>  
 	
 </body>
 </html>
