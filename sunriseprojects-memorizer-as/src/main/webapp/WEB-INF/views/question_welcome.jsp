@@ -53,8 +53,8 @@
 <br/><br/>
 Templates: 
 <br/>
-<a href="memorize-this.xlsx">memorize-this.xlsx</a>	
+<a href="/memorize-this.xlsx">memorize-this.xlsx</a>	
 <br/>
-<a href="sample.xlsx">sample.xlsx</a>	
+<a href="/sample.xlsx">sample.xlsx</a>	
 </body>
 </html>
