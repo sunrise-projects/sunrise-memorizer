@@ -50,7 +50,7 @@ public class SerializedDataHandler extends DataHandler {
 		
 		String temp = System.getProperty("java.io.tmpdir");
 		System.out.println(temp);
-		FileInputStream fin = new FileInputStream(temp+"\\memorizer-"+ctx.getSessiondId()+".tmp");
+		FileInputStream fin = new FileInputStream(temp+"/memorizer-"+ctx.getSessiondId()+".tmp");
 		ObjectInputStream ois = new ObjectInputStream(fin);
 		SessionDAO qASessionDAO = (SessionDAO) ois.readObject();
 		
