@@ -24,7 +24,8 @@ public class QAUtils {
 	public static void evaluteQuestionSet(SessionDAO session, List<QuestionDAO> questions, ContextDAO application ) {
 		List<Integer> questionIndexes = new ArrayList<Integer>();
 		for ( int i=0; i<questions.size(); i++ ) {
-			QuestionDAO  qandaQuestion = questions.get(i);
+			QuestionDAO  qandaQuestion = questions.get(i); 
+			//question times to be asked if answered correctly
 			if(qandaQuestion.getCorrectAnswerCount() < 2) questionIndexes.add(i);
 		}
 		
