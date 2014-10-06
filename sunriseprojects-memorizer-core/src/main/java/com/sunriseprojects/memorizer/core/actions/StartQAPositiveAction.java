@@ -71,8 +71,7 @@ public class StartQAPositiveAction extends QAPersistenceAwareAction {
 		DataHandler handler = DataHandler.getInstance(DataHandler.Types.EXCEL);
 		
 		@SuppressWarnings("unchecked")
-		//List<QuestionDAO> questions2 = (List<QuestionDAO>)handler.loadData("C:\\javaapps2014\\memo-data\\1Book1.xlsx");
-		
+
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
 		
 		

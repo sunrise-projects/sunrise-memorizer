@@ -106,7 +106,7 @@ public class ExcelDataHandler extends DataHandler  {
 				q.setAnswer(items.get(2).toString());
 				Map<String,String> m1 = new HashMap<String,String>();
 				//this can through an error if user put 6 answers or more. will throw business logic in future.
-				String[] letters = new String[]{"a","b","c","d","e"};
+				String[] letters = new String[]{"a","b","c","d","e","f","g","h","j","k","l","m","o","p","q","r","s","t","u"};
 				for(int i=3;i<items.size();i++) {
 					m1.put((letters[i-3]),items.get(i).toString());	
 				}
