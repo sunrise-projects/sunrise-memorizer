@@ -18,7 +18,7 @@ public class SerializedDataHandler extends DataHandler {
 		try {
 			String temp = System.getProperty("java.io.tmpdir");
 			System.out.println(temp);
-			fout = new FileOutputStream(temp+"\\memorizer-"+ctx.getSessiondId()+".tmp");
+			fout = new FileOutputStream(temp+"/memorizer-"+ctx.getSessiondId()+".tmp");
 			ObjectOutputStream oos = new ObjectOutputStream(fout);
 			oos.writeObject(dao);
 						
