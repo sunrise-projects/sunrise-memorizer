@@ -17,6 +17,7 @@ public class SerializedDataHandler extends DataHandler {
 		FileOutputStream fout=null;
 		try {
 			String temp = System.getProperty("java.io.tmpdir");
+			System.out.println(temp);
 			fout = new FileOutputStream(temp+"\\memorizer-"+ctx.getSessiondId()+".tmp");
 			ObjectOutputStream oos = new ObjectOutputStream(fout);
 			oos.writeObject(dao);
@@ -47,7 +48,9 @@ public class SerializedDataHandler extends DataHandler {
 
 	public SessionDAO getSessionData(ContextDAO ctx) throws Exception {
 		
-		FileInputStream fin = new FileInputStream("C:\\memorizer-"+ctx.getSessiondId()+".tmp");
+		String temp = System.getProperty("java.io.tmpdir");
+		System.out.println(temp);
+		FileInputStream fin = new FileInputStream(temp+"\\memorizer-"+ctx.getSessiondId()+".tmp");
 		ObjectInputStream ois = new ObjectInputStream(fin);
 		SessionDAO qASessionDAO = (SessionDAO) ois.readObject();
 		
