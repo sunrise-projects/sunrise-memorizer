@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class ValidStateRule extends AbstractRule {
 
-	private List validStates;
+	private List<String> validStates;
 	
 	protected boolean makeDecision(Object arg) throws Exception {
 		LoanApplication application = (LoanApplication) arg;
