@@ -42,8 +42,15 @@
     <beans:bean id="jsonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
     </beans:bean>
      
-    <context:component-scan base-package="com.sunriseprojects.memorizer.web.rest.spring.controller, com.sunriseprojects.memorizer.web.mvc.spring.controller" />
+    <context:component-scan base-package="com.sunriseprojects.memorizer.web.rest.controller, 
+	    com.sunriseprojects.memorizer.web.mvc.controller, 
+	    com.sunriseprojects.profile.web.mvc.controller,
+	    com.sunriseprojects.profile.web.rest.controller" />
      
      <context:property-placeholder location="classpath:sunriseprojects-memorizer-config/basic.properties" />
      
+     <beans:import resource="classpath:sunriseprojects-memorizer-config/spring-aop.xml"/>
+     <beans:import resource="classpath:sunriseprojects-profile-config/spring-jdbc.xml"/>
+            
+                 
 </beans:beans>

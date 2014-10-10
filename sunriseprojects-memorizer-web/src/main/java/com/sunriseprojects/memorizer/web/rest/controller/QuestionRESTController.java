@@ -1,74 +1,15 @@
-package com.sunriseprojects.memorizer.web.rest.spring.controller;
- 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import org.apache.commons.codec.binary.Base64;
+package com.sunriseprojects.memorizer.web.rest.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import com.sunriseprojects.memorizer.web.rest.spring.model.Employee;
-import com.sunriseprojects.memorizer.web.rest.spring.model.QuestionModel;
+import com.sunriseprojects.memorizer.web.rest.model.QuestionModel;
 import com.sunriseprojects.memorizer.web.services.QuestionService;
-import com.sunriseprojects.memorizer.core.console.CheckAnswerRuleEngine;
-import com.sunriseprojects.memorizer.core.console.NextQuestionRuleEngine;
-import com.sunriseprojects.memorizer.core.console.StartQARuleEngine;
-import com.sunriseprojects.memorizer.core.console.WrongAnswerRuleEngine;
-import com.sunriseprojects.memorizer.core.dao.ContextDAO;
-import com.sunriseprojects.memorizer.core.dao.QuestionDAO;
-import com.sunriseprojects.memorizer.core.framework.SpringRuleEngine;
  
 /**
  * Handles requests for the Employee service.

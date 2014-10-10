@@ -13,7 +13,7 @@ import com.sunriseprojects.memorizer.core.console.WrongAnswerRuleEngine;
 import com.sunriseprojects.memorizer.core.dao.ContextDAO;
 import com.sunriseprojects.memorizer.core.dao.QuestionDAO;
 import com.sunriseprojects.memorizer.core.framework.SpringRuleEngine;
-import com.sunriseprojects.memorizer.web.rest.spring.model.QuestionModel;
+import com.sunriseprojects.memorizer.web.rest.model.QuestionModel;
 
 public class QuestionService {
 

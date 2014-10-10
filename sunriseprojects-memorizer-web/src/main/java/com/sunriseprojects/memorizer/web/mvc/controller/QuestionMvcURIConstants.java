@@ -1,4 +1,4 @@
-package com.sunriseprojects.memorizer.web.mvc.spring.controller;
+package com.sunriseprojects.memorizer.web.mvc.controller;
  
 public class QuestionMvcURIConstants {
  

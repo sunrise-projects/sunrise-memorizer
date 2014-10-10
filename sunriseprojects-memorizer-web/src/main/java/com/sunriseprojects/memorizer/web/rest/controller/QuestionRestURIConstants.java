@@ -1,4 +1,4 @@
-package com.sunriseprojects.memorizer.web.rest.spring.controller;
+package com.sunriseprojects.memorizer.web.rest.controller;
  
 public class QuestionRestURIConstants {
  

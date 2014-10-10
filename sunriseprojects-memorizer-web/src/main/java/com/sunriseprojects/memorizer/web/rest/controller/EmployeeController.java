@@ -1,4 +1,4 @@
-package com.sunriseprojects.memorizer.web.rest.spring.controller;
+package com.sunriseprojects.memorizer.web.rest.controller;
  
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
  
+
 
 
 
@@ -22,10 +23,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 
-import com.sunriseprojects.memorizer.web.rest.spring.model.Employee;
+
+import com.sunriseprojects.memorizer.web.rest.model.Employee;
  
 /**
  * Handles requests for the Employee service.
+ * http://www.journaldev.com/2552/spring-restful-web-service-example-with-json-jackson-and-client-program
  */
 @Controller
 public class EmployeeController {

@@ -26,5 +26,7 @@
 
     <resources>
         <resource-root path="."/>
+		<resource-root path="sunriseprojects-memorizer-config"/>
+		<resource-root path="sunriseprojects-profile-config"/>
     </resources>
 </module>

@@ -1,4 +1,4 @@
-package com.sunriseprojects.memorizer.web.rest.spring.model;
+package com.sunriseprojects.memorizer.web.rest.model;
  
 import java.io.Serializable;
 import java.util.Date;

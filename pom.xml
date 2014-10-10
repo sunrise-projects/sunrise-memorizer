@@ -12,6 +12,8 @@
         <module>sunriseprojects-memorizer-core</module>
         <module>sunriseprojects-memorizer-web</module>
 		<module>sunriseprojects-memorizer-as</module>
+		<module>sunriseprojects-profile-core</module>
+        <module>sunriseprojects-profile-web</module>
     </modules>
     <build>
         <pluginManagement>

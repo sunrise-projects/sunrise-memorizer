@@ -1,4 +1,4 @@
-package com.sunriseprojects.memorizer.web.mvc.spring.controller;
+package com.sunriseprojects.memorizer.web.mvc.controller;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.sunriseprojects.memorizer.web.rest.spring.model.QuestionModel;
+import com.sunriseprojects.memorizer.web.rest.model.QuestionModel;
  
 @Controller
 public class QuestionMVCController {

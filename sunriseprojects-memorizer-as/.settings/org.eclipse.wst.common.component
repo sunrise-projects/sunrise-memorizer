@@ -11,6 +11,12 @@
         <dependent-module archiveName="sunriseprojects-memorizer-web-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/sunriseprojects-memorizer-web/sunriseprojects-memorizer-web">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="sunriseprojects-profile-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/sunriseprojects-profile-core/sunriseprojects-profile-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sunriseprojects-profile-web-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/sunriseprojects-profile-web/sunriseprojects-profile-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="sunriseprojects-memorizer-as"/>
         <property name="java-output-path" value="/sunriseprojects-memorizer-as/target/classes"/>
     </wb-module>
