@@ -22,7 +22,6 @@
   });
   </script>
 <h3>Results</h3>
-<br/>
 <b>
 Summary
 </b>
@@ -32,12 +31,20 @@ totalCorrect: ${totalCorrect}
 totalCount: ${totalCount}
 <br/>
 average: ${average}
-<br/>
+<br/><br/><br/>
 <div id="inline_content">
 <table>
 <c:forEach items="${questionlist}" var="element" varStatus="status"> 
   <tr>
-    <td><b>${status.count}. ${element.question}</b>
+	<c:choose>
+	    <c:when test="${element.testerAnswer eq element.answer}">
+	       <td style="padding-left: 5px;color:red">
+	    </c:when>
+	    <c:otherwise>
+	        <td>
+	    </c:otherwise>
+	</c:choose>	
+    <b>${status.count}. ${element.question}</b>
 	<br/>
 	<c:forEach var="entry" items="${element.selections}">
 		<c:choose>
