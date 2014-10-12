@@ -40,7 +40,5 @@
 		</property>
 
 		<property name="advice" ref="questionServiceAdvice" />
-	</bean>
-    <!--  http://www.mkyong.com/spring/spring-aop-example-pointcut-advisor/  -->
-    
+	</bean>    
 </beans>

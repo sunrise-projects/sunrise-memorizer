@@ -19,7 +19,27 @@ public class QuestionDAO implements Serializable {
 	private String illustration;
 	private Map<String,String> selections;
 	
+	private String testerAnswer;
+	private boolean testerCorrect;
 	
+	
+	public boolean isTesterCorrect() {
+		return testerCorrect;
+	}
+
+	public void setTesterCorrect(boolean testerCorrect) {
+		this.testerCorrect = testerCorrect;
+	}
+
+	public String getTesterAnswer() {
+		return testerAnswer;
+	}
+
+	public void setTesterAnswer(String testerAnswer) {
+		this.testerAnswer = testerAnswer;
+	}
+
+
 	public Map<String, String> getSelections() {
 		return selections;
 	}
@@ -69,13 +89,13 @@ public class QuestionDAO implements Serializable {
 
 	@Override
 	public String toString() {
-		return "QAQuestionDAO [questionNumber=" + questionNumber
-				+ ", question=" + question + ", answer=" + answer
-				+ ", correctAnswerCount=" + correctAnswerCount
-				+ ", explanation=" + explanation + ", illustration="
-				+ illustration + ", selections=" + selections + "]";
+		return "QuestionDAO [questionNumber=" + questionNumber + ", question="
+				+ question + ", answer=" + answer + ", correctAnswerCount="
+				+ correctAnswerCount + ", explanation=" + explanation
+				+ ", illustration=" + illustration + ", selections="
+				+ selections + ", testerAnswer=" + testerAnswer
+				+ ", testerCorrect=" + testerCorrect + "]";
 	}
-	
 	
 	
 	

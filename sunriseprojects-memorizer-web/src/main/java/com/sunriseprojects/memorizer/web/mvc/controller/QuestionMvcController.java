@@ -20,10 +20,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.sunriseprojects.memorizer.web.constants.QuestionMVCConstants;
 import com.sunriseprojects.memorizer.web.rest.model.QuestionModel;
  
 @Controller
-public class QuestionMVCController {
+public class QuestionMvcController {
 
 	@Value("${rest.url}")
 	private String restUrl;
@@ -31,7 +32,7 @@ public class QuestionMVCController {
 	@Value("${excel.location}")
 	private String excelLocation;
 	
-	@RequestMapping(value = QuestionMvcURIConstants.QUESTION_UPLOAD, method = RequestMethod.POST)
+	@RequestMapping(value = QuestionMVCConstants.QUESTION_UPLOAD, method = RequestMethod.POST)
 	public String questionUploadFile(ModelMap model, @RequestParam("name") String name, 
 			@RequestParam("file") MultipartFile file) {		
         String fname = name+"-uploaded"+UUID.randomUUID().toString();
@@ -60,7 +61,7 @@ public class QuestionMVCController {
 		return "question_start";
 	}
 	
-	@RequestMapping(value = QuestionMvcURIConstants.WELCOME_QUESTION, method = RequestMethod.GET)
+	@RequestMapping(value = QuestionMVCConstants.WELCOME_QUESTION, method = RequestMethod.GET)
 	public String quesitonWelcome(ModelMap model) {
  
 		Map<String,String> map = new HashMap<String,String>();
@@ -84,7 +85,7 @@ public class QuestionMVCController {
 		return "question_welcome";
 	}
 
-	@RequestMapping(value = QuestionMvcURIConstants.START_QUESTION_FILE, method = RequestMethod.GET)
+	@RequestMapping(value = QuestionMVCConstants.START_QUESTION_FILE, method = RequestMethod.GET)
 	public String quesitonStartFile(ModelMap model, @PathVariable("file") String file) {
  		
         RestTemplate restTemplate = new RestTemplate();
@@ -95,7 +96,7 @@ public class QuestionMVCController {
 		return "question_start";
 	}
 	
-	@RequestMapping(value = QuestionMvcURIConstants.START_QUESTION, method = RequestMethod.GET)
+	@RequestMapping(value = QuestionMVCConstants.START_QUESTION, method = RequestMethod.GET)
 	public String quesitonStart(ModelMap model) {
  		
         RestTemplate restTemplate = new RestTemplate();
@@ -106,7 +107,7 @@ public class QuestionMVCController {
 		return "question_start";
 	}
 
-	@RequestMapping(value = QuestionMvcURIConstants.NEXT_QUESTION, method = RequestMethod.GET)
+	@RequestMapping(value = QuestionMVCConstants.NEXT_QUESTION, method = RequestMethod.GET)
 	public String nextQuestion(ModelMap model, @PathVariable("sessionId") String sessionId) {
  		
         RestTemplate restTemplate = new RestTemplate();
@@ -117,7 +118,7 @@ public class QuestionMVCController {
 		return "question_next";
 	}
 
-	@RequestMapping(value = QuestionMvcURIConstants.REVIEW_ANSWER, method = RequestMethod.GET)
+	@RequestMapping(value = QuestionMVCConstants.REVIEW_ANSWER, method = RequestMethod.GET)
 	public String showAnswers(ModelMap model, @PathVariable("sessionId") String sessionId) {
  		
         RestTemplate restTemplate = new RestTemplate();

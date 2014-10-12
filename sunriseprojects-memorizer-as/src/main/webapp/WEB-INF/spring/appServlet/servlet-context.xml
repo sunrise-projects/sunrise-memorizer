@@ -49,6 +49,12 @@
      
      <context:property-placeholder location="classpath:sunriseprojects-memorizer-config/basic.properties" />
      
+     <!-- 
+     <beans:bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+       		<beans:property name="locations" value="classpath:sunriseprojects-profile-config/profile.properties" />
+   	</beans:bean>
+   	      -->
+   	      
      <beans:import resource="classpath:sunriseprojects-memorizer-config/spring-aop.xml"/>
      <beans:import resource="classpath:sunriseprojects-profile-config/spring-jdbc.xml"/>
             
