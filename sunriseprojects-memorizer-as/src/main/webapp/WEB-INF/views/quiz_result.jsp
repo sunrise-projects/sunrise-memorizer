@@ -38,10 +38,10 @@ average: ${average}
   <tr>
 	<c:choose>
 	    <c:when test="${element.testerAnswer eq element.answer}">
-	       <td style="padding-left: 5px;color:red">
+	       <td>
 	    </c:when>
 	    <c:otherwise>
-	        <td>
+	    	<td style="padding-left: 5px;color:red">	        
 	    </c:otherwise>
 	</c:choose>	
     <b>${status.count}. ${element.question}</b>
