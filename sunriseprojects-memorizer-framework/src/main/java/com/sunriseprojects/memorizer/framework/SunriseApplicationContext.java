@@ -10,7 +10,7 @@ public class SunriseApplicationContext {
 	
 	
 	private SunriseApplicationContext() {
-		
+		System.out.println("init SunriseApplicationContext Singleton ");
 		map = new ConcurrentHashMap<String, Object>();
 	}
 	
@@ -25,13 +25,15 @@ public class SunriseApplicationContext {
 	}
 	
 	public void setAppContext(String key, Object value) {
+		System.out.println("set SunriseApplicationContext Singleton " + key + " " + value);
 		map.put(key, value);
 	}
 	
 	public Object getAppContext(String key) {
+		System.out.println("get SunriseApplicationContext Singleton " + key + " " + map.get(key));
 		return map.get(key);
 	}
-	
+	 	
 
 	
 	

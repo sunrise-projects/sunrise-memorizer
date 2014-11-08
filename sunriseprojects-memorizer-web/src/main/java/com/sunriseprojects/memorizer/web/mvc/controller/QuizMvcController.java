@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.sunriseprojects.memorizer.framework.SunriseApplicationContext;
 import com.sunriseprojects.memorizer.web.constants.QuestionMVCConstants;
 import com.sunriseprojects.memorizer.web.rest.model.QuestionModel;
 import com.sunriseprojects.memorizer.web.rest.model.QuizModel;
@@ -36,6 +37,10 @@ public class QuizMvcController {
 	@RequestMapping(value = QuestionMVCConstants.QUIZ_WELCOME, method = RequestMethod.GET)
 	public String quesitonWelcome(ModelMap model) {
  
+		SunriseApplicationContext instance = SunriseApplicationContext.getInstance();
+		String obj = (String)instance.getAppContext("init-message");
+		System.out.println(obj);
+		
 		Map<String,String> map = new HashMap<String,String>();
 		File folder = new File(excelLocation);
 		File[] listOfFiles = folder.listFiles();

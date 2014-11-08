@@ -1,0 +1,18 @@
+https://zorq.net/b/2011/07/12/adding-a-mysql-datasource-to-jboss-as-7/
+https://developer.jboss.org/thread/196072?tstart=0
+
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="com.mysql">
+  <resources>
+    <resource-root path="mysql-connector-java-5.1.34-bin-bin.jar"/>
+  </resources>
+  <dependencies>
+    <module name="javax.api"/>
+	<module name="javax.transaction"/>
+  </dependencies>
+</module>
+
+
+
+
+

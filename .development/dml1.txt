@@ -1,0 +1,23 @@
+
+
+CREATE USER 'usrrw7'@'localhost' IDENTIFIED BY 'chang3m3';
+GRANT ALL PRIVILEGES ON *.* TO 'usrrw7'@'localhost';
+GRANT USAGE ON *.* TO 'usrrw7'@'localhost';
+FLUSH PRIVILEGES;
+
+GRANT USAGE ON *.* TO 'usrrw7'@'localhost';
+DROP USER 'usrrw7'@'localhost';
+
+
+creat database qa1_r1_idx0;
+
+CREATE TABLE `member_auth` (
+ `email` varchar(100) NOT NULL,
+ `passwd` varchar(200) DEFAULT NULL,
+ `member_number` varchar(18) DEFAULT NULL,
+ `create_by` varchar(100) DEFAULT NULL,
+ `create_ts` timestamp NULL DEFAULT NULL,
+ `update_by` varchar(100) DEFAULT NULL,
+ `update_ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
