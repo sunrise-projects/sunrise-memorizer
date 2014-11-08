@@ -55,7 +55,7 @@
    	</beans:bean>
    	      -->
    	      
-    <beans:bean id="sunriseFrameworkInitService" class="com.sunriseprojects.memorizer.framework.SunriseFrameworkInitService" init-method="initIt" destroy-method="cleanUp>
+    <beans:bean id="sunriseFrameworkInitService" class="com.sunriseprojects.memorizer.framework.SunriseFrameworkInitService" init-method="initIt" destroy-method="cleanUp">
     	
     	<beans:property name="message" value="i'm property message" />
     
