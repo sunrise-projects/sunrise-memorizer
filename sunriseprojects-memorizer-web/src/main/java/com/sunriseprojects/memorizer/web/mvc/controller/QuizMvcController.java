@@ -53,7 +53,7 @@ public class QuizMvcController {
 		      }
 		    }		
 		model.addAttribute("fileList", map);
-		model.addAttribute("message", "Ready to start question?");
+		model.addAttribute("message", "Ready to start quiz?");
 		return "quiz_welcome";
 	}
 
