@@ -9,6 +9,7 @@
     <version>1.0</version>
     <name>Memorizer Parent</name>
     <modules>
+		<module>sunriseprojects-memorizer-framework</module>
         <module>sunriseprojects-memorizer-core</module>
         <module>sunriseprojects-memorizer-web</module>
 		<module>sunriseprojects-memorizer-as</module>

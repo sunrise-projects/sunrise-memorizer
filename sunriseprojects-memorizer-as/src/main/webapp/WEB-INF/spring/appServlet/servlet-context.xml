@@ -55,6 +55,12 @@
    	</beans:bean>
    	      -->
    	      
+    <beans:bean id="sunriseFrameworkInitService" class="com.sunriseprojects.memorizer.framework.SunriseFrameworkInitService" init-method="initIt" destroy-method="cleanUp>
+    	
+    	<beans:property name="message" value="i'm property message" />
+    
+    </beans:bean>
+       	      
      <beans:import resource="classpath:sunriseprojects-memorizer-config/spring-aop.xml"/>
      <beans:import resource="classpath:sunriseprojects-profile-config/spring-jdbc.xml"/>
             
