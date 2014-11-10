@@ -12,12 +12,24 @@ DROP USER 'usrrw7'@'localhost';
 creat database qa1_r1_idx0;
 
 CREATE TABLE `member_auth` (
- `email` varchar(100) NOT NULL,
- `passwd` varchar(200) DEFAULT NULL,
- `member_number` varchar(18) DEFAULT NULL,
- `create_by` varchar(100) DEFAULT NULL,
- `create_ts` timestamp NULL DEFAULT NULL,
- `update_by` varchar(100) DEFAULT NULL,
- `update_ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
- PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+  `email` varchar(100) NOT NULL,
+  `passwd` varchar(20) DEFAULT NULL,
+  `member_number` varchar(18) DEFAULT NULL,
+  `create_by` varchar(100) DEFAULT NULL,
+  `create_ts` timestamp NULL DEFAULT NULL,
+  `update_by` varchar(100) DEFAULT NULL,
+  `update_ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `member_profile` (
+  `email` varchar(100) NOT NULL,
+  `firstname` varchar(200) DEFAULT NULL,
+  `lastname` varchar(200) DEFAULT NULL,
+  `create_by` varchar(100) DEFAULT NULL,
+  `create_ts` timestamp NULL DEFAULT NULL,
+  `update_by` varchar(100) DEFAULT NULL,
+  `update_ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+

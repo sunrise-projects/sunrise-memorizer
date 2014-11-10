@@ -209,6 +209,31 @@
             <artifactId>sunriseprojects-profile-core</artifactId>
             <version>1.0</version>
         </dependency>     
+        
+		<!-- Spring and Transactions -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- Spring JDBC and MySQL Driver -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.5</version>
+		</dependency>
+		        
 
 		<!-- Apache Commons FileUpload -->
 		<dependency>
