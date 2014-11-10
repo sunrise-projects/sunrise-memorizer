@@ -13,6 +13,12 @@ https://developer.jboss.org/thread/196072?tstart=0
 </module>
 
 
+git issue '' ! [rejected]        master -> master (non-fast-forward)
+
+git pull https://github.com/sunrise-projects/sunrise-memorizer.git master
+git push
+
+
 
 
 
