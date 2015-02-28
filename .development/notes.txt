@@ -12,11 +12,31 @@ https://developer.jboss.org/thread/196072?tstart=0
   </dependencies>
 </module>
 
+http://java.dzone.com/articles/java-thread-local-%E2%80%93-how-use
+http://www.journaldev.com/2603/spring-transaction-management-example-with-jdbc
 
-git issue '' ! [rejected]        master -> master (non-fast-forward)
+how to enable xa
+module.xml
+edit service/java.util.Driver com.mysql.jdbc.Driver
+add the driver
+use mysql-connector-java-3.1.14-bin.jar
 
-git pull https://github.com/sunrise-projects/sunrise-memorizer.git master
-git push
+module.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.1" name="com.mysql">
+
+    <resources>
+        <resource-root path="mysql-connector-java-3.1.14-bin.jar"/>
+        <!-- Insert resources here -->
+    </resources>
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+    </dependencies>
+</module>
+
+
 
 
 
